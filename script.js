@@ -3,5 +3,8 @@ const d = new Date();
 let day = days[d.getUTCDay()];
 document.getElementById('day').innerHTML = day;
 
-const b = Date.now();
-document.getElementById('time').innerHTML = b;
+//const b = Date.now();
+// document.getElementById('time').innerHTML = b;
+const currentDate = new Date();
+const formattedDate = currentDate.toLocaleString();
+document.getElementById('time').innerHTML = formattedDate;
